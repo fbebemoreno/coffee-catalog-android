@@ -2,4 +2,6 @@
     <string name="app_name">Coffee Catalog</string>
     <string name="coffee_list">Coffee List</string>
     <string name="your_favourite">Your Favourite</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
