@@ -5,6 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import unj.cs.hw4.adapter.CoffeeAdapter
+import unj.cs.hw4.data.Coffee
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -21,6 +25,11 @@ class CoffeeListFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
+    private lateinit var adapter: CoffeeAdapter
+    private lateinit var recyclerView: RecyclerView
+    private lateinit var coffeeArrayList: ArrayList<Coffee>
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -35,6 +44,17 @@ class CoffeeListFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_coffee_list, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        dataSource()
+        val layoutManager = LinearLayoutManager(context)
+        recyclerView = view.findViewById(R.id.rv_coffee_list)
+        recyclerView.layoutManager = layoutManager
+        recyclerView.setHasFixedSize(true)
+        adapter = CoffeeAdapter(coffeeArrayList)
+        recyclerView.adapter = adapter
     }
 
     companion object {
@@ -56,4 +76,22 @@ class CoffeeListFragment : Fragment() {
                 }
             }
     }
+
+    private fun dataSource() {
+
+        coffeeArrayList = arrayListOf<Coffee>(
+            Coffee(R.drawable.coffee1, getString(R.string.coffee_title_1), getString(R.string.coffee_desc_1)),
+            Coffee(R.drawable.coffee2, getString(R.string.coffee_title_2), getString(R.string.coffee_desc_2)),
+            Coffee(R.drawable.coffee3, getString(R.string.coffee_title_3), getString(R.string.coffee_desc_3)),
+            Coffee(R.drawable.coffee4, getString(R.string.coffee_title_4), getString(R.string.coffee_desc_4)),
+            Coffee(R.drawable.coffee5, getString(R.string.coffee_title_5), getString(R.string.coffee_desc_5)),
+            Coffee(R.drawable.coffee6, getString(R.string.coffee_title_6), getString(R.string.coffee_desc_6)),
+            Coffee(R.drawable.coffee7, getString(R.string.coffee_title_7), getString(R.string.coffee_desc_7)),
+            Coffee(R.drawable.coffee8, getString(R.string.coffee_title_8), getString(R.string.coffee_desc_8)),
+            Coffee(R.drawable.coffee9, getString(R.string.coffee_title_9), getString(R.string.coffee_desc_9)),
+            Coffee(R.drawable.coffee10, getString(R.string.coffee_title_10), getString(R.string.coffee_desc_10))
+        )
+
+    }
+
 }

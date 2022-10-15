@@ -2,6 +2,28 @@
     <string name="app_name">Coffee Catalog</string>
     <string name="coffee_list">Coffee List</string>
     <string name="your_favourite">Your Favourite</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--  Coffee Titles  -->
+    <string name="coffee_title_1">Espresso</string>
+    <string name="coffee_title_2">Cappuccino</string>
+    <string name="coffee_title_3">Americano</string>
+    <string name="coffee_title_4">Latte</string>
+    <string name="coffee_title_5">Ristretto</string>
+    <string name="coffee_title_6">Macchiato</string>
+    <string name="coffee_title_7">Affogato</string>
+    <string name="coffee_title_8">Cafe Au Lait</string>
+    <string name="coffee_title_9">Galao</string>
+    <string name="coffee_title_10">Lungo</string>
+
+    <!--  Coffee Description  -->
+    <string name="coffee_desc_1">Kopi yang dihasilkan dengan mengekstraksi biji kopi yang sudah digiling dengan menyemburkan air panas di bawah tekanan tinggi.</string>
+    <string name="coffee_desc_2">Minuman khas Italia yang dibuat dari espreso dan susu.</string>
+    <string name="coffee_desc_3">Kopi yang dibuat dengan mencampurkan satu seloki espresso dengan air panas.</string>
+    <string name="coffee_desc_4">Kopi yang dicampur dengan susu dan memiliki lapisan busa yang tipis di bagian atasnya.</string>
+    <string name="coffee_desc_5">Kopi yang serupa dengan espresso tetapi menggunakan air yang lebih sedikit.</string>
+    <string name="coffee_desc_6">Kopi yang dibuat dengan mencampurkan espresso dengan susu.</string>
+    <string name="coffee_desc_7">Kopi espresso panas dengan topping gelato vanilla atau es krim.</string>
+    <string name="coffee_desc_8">Campuran kopi hitam yang tajam dengan susu panas.</string>
+    <string name="coffee_desc_9">Kopi espresso ditambah dengan susu berbusa di atasnya.</string>
+    <string name="coffee_desc_10">Kopi hitam dengan air yang lebih banyak.</string>
 </resources>
