@@ -1,14 +1,17 @@
 package unj.cs.hw4
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import unj.cs.hw4.adapter.CoffeeAdapter
 import unj.cs.hw4.data.Coffee
+import unj.cs.hw4.databinding.ActivityMainBinding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -79,7 +82,7 @@ class CoffeeListFragment : Fragment() {
 
     private fun dataSource() {
 
-        coffeeArrayList = arrayListOf<Coffee>(
+        coffeeArrayList = arrayListOf(
             Coffee(R.drawable.coffee1, getString(R.string.coffee_title_1), getString(R.string.coffee_desc_1)),
             Coffee(R.drawable.coffee2, getString(R.string.coffee_title_2), getString(R.string.coffee_desc_2)),
             Coffee(R.drawable.coffee3, getString(R.string.coffee_title_3), getString(R.string.coffee_desc_3)),
